@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="card-view">
+            <div id="card-title" class="card-view-text"></div>
+            <div id="card-author" class="card-view-text"></div>
+            <div id="card-pages" class="card-view-text"></div>
+            <div id=checkbox-wrapper>
+                <input type="checkbox" name="checkbox-card" id="card-read"> 
+                <label for="checkbox-card">I have read this book</label>
+            </div>
+            <input type="button" id="remove" value="remove">
+        </div>
+        <div id="library-wrapper">
+        </div>
+        <a href="#form-new">Add Book</a>
+    </div>
+    <form id="form-new" onsubmit="return false">
+        <div class="input-wrapper">
+        <label for="title">Title</label><br>
+        <input type="text" id="title" required><br>
+        </div>
+        <div class="input-wrapper">
+        <label for="author">Author</label><br>
+        <input type="text" id="author" required><br>
+        </div>
+        <div class="input-wrapper">
+        <label for="pages">Pages</label><br>
+        <input type="number" id="pages" min="0" required><br>
+        </div>
+        <input type="checkbox" name="checkbox" id="read"> 
+        <label for="checkbox">I have read this book</label>
+        <input type="submit" value="add book" id="add">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

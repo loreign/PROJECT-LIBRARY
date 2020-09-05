@@ -1,0 +1,138 @@
+:root {
+    --main-bg-color: rgb(231,223,213);
+    --card-bg-color: rgb(132,169,172);
+    --lib-bg-color: rgb(59,105,120);
+    --font-color: rgb(32,64,81);
+    background-color: rgb(132,169,172);
+}
+
+body{
+    height: 100%;    
+    color: var(--font-color);
+}
+
+#main {
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    padding-top: 50px;
+    text-align: center;
+}
+
+#card-view {
+    background-color: var(--card-bg-color);
+    box-shadow: 15px 28px 25px -15px rgba(0,0,0,0.4);
+    position: relative;
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+}
+
+#card-title {
+    margin: 10px auto 20px;
+    color: yellow;
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+}
+
+#card-author {
+    margin: 50px auto 50px auto;
+    font-style: italic;
+}
+
+#card-pages {
+
+    font-size: 0.75rem;
+}
+
+#checkbox-wrapper {
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+}
+
+#remove {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#library-wrapper {
+    margin: 50px auto 50px auto; 
+    height: 230px;
+    padding-top: 10px;
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+}
+
+.book {
+    background-color: var(--lib-bg-color);
+    color: rgb(231,223,213);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+    display: inline-block;
+    position: relative;
+    height: 180px;
+    border-radius: 5px;
+    width: 70px;
+    font-size: 15px;
+    margin: 5px;
+    transition: all 0.25s;
+    top: 10px;
+}
+
+.book:hover {
+    top: -10px;
+    box-shadow: 0 30px 30px 0 rgba(0,0,0,0.4);
+    color: yellow;
+}
+
+.book-title {
+    position: relative;
+    top: 35px;
+    transform: rotate(90deg);
+}
+
+.book-author {
+    position: relative;
+    top: 80px;
+}
+
+a {
+    position: relative;
+    bottom: 45px;
+}
+
+form {
+    background-color: rgb(59,105,120);
+    color: rgb(231,223,213);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 40px 40px;
+}
+
+label[for=title], label[for=author], label[for=pages]{
+    position: relative;
+    top: -5px;
+}
+
+.input-wrapper {
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
